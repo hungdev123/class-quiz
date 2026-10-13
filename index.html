@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Làm bởi Hưng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="quiz-card" aria-labelledby="quiz-title">
+            <div class="quiz-topline">
+                <span class="quiz-tag">ĐỐ (không) VUI</span>
+                <span class="question-count" id="question-count">Câu 1 / 5</span>
+            </div>
+
+            <div class="progress-track" aria-hidden="true">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+
+            <h1 id="quiz-title">Kiểm tra độ bá khí của bạn</h1>
+            <p class="subtitle">Chọn đáp án đúng</p>
+
+            <div class="question-area" aria-live="polite">
+                <p class="question" id="question"></p>
+                <div class="answers" id="answers"></div>
+            </div>
+
+            <div class="quiz-footer">
+                <p class="feedback" id="feedback" aria-live="polite">Chúc bạn vui chơi</p>
+                <button class="next-button" id="next-button" type="button" disabled>Tiếp <span aria-hidden="true">→</span></button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
